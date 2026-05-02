@@ -1,7 +1,7 @@
-@Library('java-pipeline-template@main') _
+@Library('java-pipeline-template') _
 
-standardPipeline(
-    gitUrl: 'https://github.com/abdogemy2002/spring-app-a.git',
+javaPipelineTemplate(
+      gitUrl: 'https://github.com/abdogemy2002/spring-app-a.git',
     gitBranch: 'main',
     serverPort: '8081',
     imageName: 'service-a',
