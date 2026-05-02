@@ -1,7 +1,9 @@
-@Library('java-pipeline-template') _
+@Library('java-pipeline-template@main') _
 
-javaPipelineTemplate(
-    gitUrl: 'https://github.com/abdogemy2002/spring-petclinic-a.git', // Use your internal IP
+standardPipeline(
+    gitUrl: 'https://github.com/abdogemy2002/spring-app-a.git',
     gitBranch: 'main',
-    serverPort: '8081'
+    serverPort: '8081',
+    imageName: 'service-a',
+    imageTag: "v1.0.${env.BUILD_NUMBER}"
 )
